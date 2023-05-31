@@ -1,0 +1,13 @@
+header img{
+    width: 162px;
+    height: 27.7px;  
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    
+    background-color: yellow;
+   
+}
