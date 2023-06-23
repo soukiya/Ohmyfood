@@ -38,3 +38,264 @@ header{
   display: block;
   padding: 0 15px;
 }
+/* Reservations */
+
+.menu-reservation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+
+}
+.menu-reservation h1 {
+  font-size: 1.5em;
+  margin: 39.5px 5px 0 5px;
+}
+.menu-reservation  p {
+  font-size: 1em;
+  font-weight: 300;
+  padding: 27px 25px 27px 25px;
+}
+.button {
+  color: #ffffff;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 0.95em;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+.button--clickable {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.button:hover::after {
+  opacity: 0.15;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: -1;
+}
+.favorite {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+.favorite--clicked {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.favorite--clicked_heart {
+  opacity: 0;
+  background: linear-gradient(#FFFFFF 0 50%, #9356DC 50% 65%, #FF79DA);
+  background-size: auto 60px;
+  background-position: 0 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: drain-out 500ms ease-in both;
+}
+.favorite--clicked_heart:hover {
+  animation: fill-up 500ms ease-in both;
+}
+
+/* functioning */
+.functioning{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #ffffff;
+  position: relative;
+ 
+}
+.functioning h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px 20px 26px 20px;
+  width: 76%;
+  min-width: 350px;
+  max-width: 1060px;
+  text-align: left;
+}
+.functioning-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  gap: 25px;
+}
+.functioning-card {
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 80%;
+  height: 72px;
+  position: relative;
+
+}
+.functioning-card_number {
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #9356DC;
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: 500;
+  position: absolute;
+  left: -12px;
+}
+.functioning-card_icon {
+  color: #777777;
+}
+.functioning-card_icon--selected {
+  color: #9356DC;
+}
+/****Restaurants****/
+.restaurants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  position: relative;
+  padding: 50px 20px;
+}
+.restaurants h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 1060px;
+  text-align: left;
+}
+.restaurants_new, .restaurants_old{
+  display: flex;
+  align-items: center;
+  gap: 95.68px;
+ 
+}
+
+.restaurants_new {
+  margin-bottom: 0px;
+  }
+
+.restaurants-card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  min-width: 340px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurants-card {
+    width: 50%;
+    margin-bottom: 18px;
+  }
+.restaurants-card .new {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 6px 9px;
+  font-size: 0.875em;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background-color: #99E2D0;
+}
+.restaurants-card_img {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+}
+.restaurants-card_img img {
+  width: 100%;
+  object-position: 0 -50px;
+}
+.restaurants-card_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 77px;
+  width: 100%;
+}
+.restaurants-card_text_details {
+  height: 100%;
+  margin-left: 15px;
+}
+.restaurants-card_text_details h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.restaurants-card_text_details p {
+  font-size: 1.0625em;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.restaurants-card_text .favorite {
+  margin: 15px;
+  z-index: 2;
+}
+.restaurants-card_text .favorite i {
+  font-size: 22px;
+}
+.restaurants-card_text_logo {
+  background-color: #ffffff;
+}
+.restaurants-card--clickable {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.background {
+  overflow: hidden;
+}
+.background--lanoteenchantee {
+  height: 300px;
+}
+.background_img {
+  width: 100%;
+}
+.background_img--lanoteenchantee {
+  object-position: 0 -95px;
+}

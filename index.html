@@ -21,11 +21,125 @@
     <header>
         <img src="publics/images/logo/ohmyfood.png" alt="logo ohmyfood">
     </header>
-    <main>
+    <>
         <div class="location">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
+        <section class="menu-reservation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <div class="button">
+                <p>Explorer nos restaurants</p>
+                <a class="button--clickable" href="#restaurants"></a>
+            </div>
+        </section>
+        <section class="functioning">
+            <h2>Fonctionnement</h2>
+            <div class="functioning-choice">
+                <div class="functioning-card">
+                    <p class="functioning-card_number">1</p>
+                    <i class="fa-solid fa-mobile-screen-button functioning-card_icon"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="functioning-card">
+                    <p class="functioning-card_number">2</p>
+                    <i class="fa-solid fa-list-ul functioning-card_icon"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="functioning-card">
+                    <p class="functioning-card_number">3</p>
+                    <i class="fa-solid fa-store functioning-card_icon--selected"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+        </section>
+        <section id="restaurants" class="restaurants">
+            <h2> Restaurants</h2>
+            <div class="restaurants_new">
+                <article class="restaurants-card">
+                    <div class="restaurants-card_img">
+                        <img src="publics/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Photo de plat au restaurant La palette du goût">
+                    </div>
+                    <p class="new">Nouveau</p>
+                    <div class="restaurants-card_text">
+                        <div class="restaurants-card_text_details">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="favorite restaurants-card_favorite">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="favorite--clicked">
+                                <i class="fa-solid fa-heart favorite--clicked_heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="restaurants-card--clickable" href="pages/lapalettedugout.html"></a>
+                </article>
+                <article class="restaurants-card">
+                    <div class="restaurants-card_img">
+                        <img id="lanoteenchantee" class="shift" src="publics/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Photo de plat au restaurant La note enchantée">
+                    </div>
+                    <p class="new">Nouveau</p>
+                    <div class="restaurants-card_text">
+                        <div class="restaurants-card_text_details">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="favorite">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="favorite--clicked">
+                                <i class="fa-solid fa-heart favorite--clicked_heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="restaurants-card--clickable" href="pages/lanoteenchantee.html"></a>
+                </article>
+            </div>
+            <div class="restaurants_old">
+                <article class="restaurants-card">
+                    <div class="restaurants-card_img">
+                        <img src="publics/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Photo de plat au restaurant À la française">
+                    </div>
+                    <div class="restaurants-card_text">
+                        <div class="restaurants-card_text_details">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="favorite">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="favorite--clicked">
+                                <i class="fa-solid fa-heart favorite--clicked_heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="restaurants-card--clickable" href="pages/alafrancaise.html"></a>
+                </article>
+                <article class="restaurants-card">
+                    <div class="restaurants-card_img">
+                        <img src="publics/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Photo de plat au restaurant Le délice des sens">
+                    </div>
+                    <div class="restaurants-card_text">
+                        <div class="restaurants-card_text_details">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="favorite">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="favorite--clicked">
+                                <i class="fa-solid fa-heart favorite--clicked_heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="restaurants-card--clickable" href="pages/lesdelicesdessens.html"></a>
+        
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>
