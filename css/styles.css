@@ -299,3 +299,44 @@ header{
 .background_img--lanoteenchantee {
   object-position: 0 -95px;
 }
+/******footer****/
+.footer {
+  background-color: #383838;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 30px;
+}
+.footer--shift {
+  position: relative;
+  top: -60px;
+}
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer_logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-links_block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.footer-links_block1 p {
+  margin: 0;
+}
