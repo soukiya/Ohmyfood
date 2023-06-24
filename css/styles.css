@@ -14,7 +14,6 @@ body {
   min-width: 375px;
   margin: auto;
 }
-
 header img{
     width: 162px;
     height: 27.7px;  
@@ -24,8 +23,100 @@ header{
     justify-content: center;
     align-items: center;
     height: 63px;
-    position: relative 
+    position: relative;
 }
+
+/*****Animation**/
+
+@keyframes fill-up {
+  0% {
+    background-position: 0 -10px;
+    opacity: 0;
+  }
+  100% {
+    background-position: 0 -40px;
+    opacity: 1;
+  }
+}
+@keyframes drain-out {
+  0% {
+    background-position: 0 -40px;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0 -10px;
+    opacity: 0;
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+
+/*Loader*/
+
+/*.anim-wrapper {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  animation: loading 3500ms linear backwards;
+}*/
+
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 10;
+  opacity: 1;
+  animation: disappear 200ms 3s forwards;
+  transform-origin: top;
+}
+
+.loader i {
+  animation: spin 3s infinite linear;
+  color: #FF79DA;
+}
+.loader i::after{
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid transparent;
+  border-top:5px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 3s ease-in-out;
+  animation-iteration-count: 2;
+
+}
+
 /* Location */
 .location {
   display: flex;
@@ -38,6 +129,7 @@ header{
   display: block;
   padding: 0 15px;
 }
+
 /* Reservations */
 
 .menu-reservation{
@@ -299,6 +391,7 @@ header{
 .background_img--lanoteenchantee {
   object-position: 0 -95px;
 }
+
 /******footer****/
 .footer {
   background-color: #383838;
@@ -340,6 +433,7 @@ header{
 .footer-links_block1 p {
   margin: 0;
 }
+
 /***other page***/
 
 .back-to-home{
@@ -697,4 +791,3 @@ header{
     align-items: center;
   }
 }
-
